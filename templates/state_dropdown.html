@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Dropdown</title>
+</head>
+<body>
+    <h1>Select a Country and State</h1>
+    <form method="POST">
+        {{ form.csrf_token }}
+        {{ form.country.label }} {{ form.country() }} <br>
+        {{ form.state.label }} {{ form.state() }} <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
